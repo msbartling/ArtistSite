@@ -1,0 +1,7 @@
+<div data-ng-controller="Sidebar as vm">
+	<ul>
+		<li ng-show="vm.isActive(0)" ng-repeat="subject in vm.home.categories"><a href="#">{{subject}}</a></li>
+		<li ng-show="vm.isActive(1)" ng-repeat="subject in vm.shop.categories"><a href="#">{{subject}}</a></li>
+		<li ng-show="vm.isActive(2)" ng-repeat="subject in vm.about.categories"><a href="#">{{subject}}</a></li>
+	</ul>
+</div>
